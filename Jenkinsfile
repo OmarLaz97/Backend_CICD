@@ -43,7 +43,7 @@ pipeline {
 
             post {
                 success {
-                    echo 'Pushed backend image successfully!!'
+                    echo 'Pushed backend image successfully!!!'
                 }
                 failure {
                     emailext body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> Build URL: ${env.BUILD_URL} <br> Stage Name: ${env.STAGE_NAME}",
