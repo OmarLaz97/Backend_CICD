@@ -1,2 +1,2 @@
-src/main/resources/application.properties merge=ours
-Jenkinsfile merge=ours
+src/main/resources/application.properties merge=keepMine
+Jenkinsfile merge=keepMine
