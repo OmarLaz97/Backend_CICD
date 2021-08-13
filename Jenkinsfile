@@ -29,7 +29,7 @@ pipeline {
 
         stage('Run backend unit tests') { 
             steps {
-                sh "docker compose up"
+                sh "docker-compose up"
             }
 
             post {
