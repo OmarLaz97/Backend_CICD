@@ -1,5 +1,5 @@
 FROM maven
 WORKDIR /app
 COPY . .
-RUN mvn install -DskipTests -o
+RUN mvn install -DskipTests -nsu
 CMD mvn test
