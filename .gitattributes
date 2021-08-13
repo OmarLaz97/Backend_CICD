@@ -1,2 +1,2 @@
-src/axios-user.js merge=ours
+src/main/resources/application.properties merge=ours
 Jenkinsfile merge=ours
