@@ -28,8 +28,9 @@ pipeline {
         // }
 
         stage('Run backend unit tests') { 
-            
-            step([$class: 'DockerComposeBuilder', dockerComposeFile: 'docker-compose.yml', option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
+            steps {
+                step([$class: 'DockerComposeBuilder', dockerComposeFile: 'docker-compose.yml', option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
+            }
             
 
             post {
