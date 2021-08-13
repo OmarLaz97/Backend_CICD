@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+    database:
+        image: 'postgres:11-alpine'
+        restart: always
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+        environment: 
+            POSTGRES_USER: 'postgres'
+            POSTGRES_PASSWORD: 'postgres'
+            PGDATA: /data/postgres
+    api:
+        image: omarlaz/backend:dev
+
