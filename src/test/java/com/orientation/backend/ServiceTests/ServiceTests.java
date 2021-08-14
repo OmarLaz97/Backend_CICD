@@ -41,7 +41,7 @@ public class ServiceTests {
         newUser.setUserName("Omar.Laz");
         newUser.setAge(23);
         newUser.setGender(false);
-        newUser.setDescription("Hi My Name Is Omar Laz");
+        newUser.setDescription("Hi My Name is Omar Laz");
     }
 
     @Test
@@ -79,7 +79,4 @@ public class ServiceTests {
 
         UserService.deleteUser(newUser.getUserName());
     }
-
-
-
 }
