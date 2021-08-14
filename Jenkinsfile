@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', 'Dockerhub') {
-                        backendImage = docker.build("omarlaz/backend:latest", "./Backend")
+                        backendImage = docker.build("omarlaz/backend:latest")
                     }
                 } 
             }
