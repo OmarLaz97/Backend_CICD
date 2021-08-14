@@ -11,7 +11,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
 
-    @NotBlank(message = "Name Cannot Be Blank!!")
+    @NotBlank(message = "Name Cannot Be Blank!")
     @Size(min = 5, max = 50, message = "Name Must Be Between 5 To 50 Characters Only")
     private String name;
 
