@@ -10,5 +10,8 @@ services:
             POSTGRES_PASSWORD: 'postgres'
             PGDATA: /data/postgres
     api:
-        image: omarlaz/backend:dev
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        # image: omarlaz/backend:dev
 
